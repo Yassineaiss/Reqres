@@ -10,7 +10,9 @@ constructor(private http:HttpClient){
 getUsers():Observable<any>{
   return this.http.get('https://reqres.in/api/users?page=2');
 }
-
+// getUser():Observable<any>{
+//   return this.http.get('https://reqres.in/api/users?page=2/:id');
+// }
 
 
 }

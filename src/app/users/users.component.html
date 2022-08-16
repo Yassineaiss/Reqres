@@ -2,5 +2,6 @@
 
 <div *ngFor="let user of users">
   {{user.email}}
+  <a routerLink="/users/{{user.id}}">link to {{user.first_name}} Profil</a>
   <img src="{{user.avatar}}">
 </div>
