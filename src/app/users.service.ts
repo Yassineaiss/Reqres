@@ -11,13 +11,13 @@ constructor(private http:HttpClient,
 
 }
 getUsers():Observable<any>{
-  return this.http.get('https://reqres.in/api/users?page=2');
+  return this.http.get('https://reqres.in/api/users?page=1');
 }
 getUser(id:string):Observable<any>{
   console.log('getUser works correctly');
   console.log(id);
 
-  return this.http.get('https://reqres.in/api/users?page=2/'+ id);
+  return this.http.get('https://reqres.in/api/users/'+ id);
 
   };
 
